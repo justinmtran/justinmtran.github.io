@@ -18,6 +18,14 @@
 
 	<!-- Custom Styles -->
 	<link href="assets/css/style.css" rel="stylesheet">
+	
+	<!-- Slider files -->
+	<link rel="stylesheet" href="assets/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/style_slider.css" type="text/css" media="screen" />
 
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
@@ -60,65 +68,21 @@
 						a client in the Parks and Recreations department. They 
 						needed an application that can record and illustrate park 
 						attendance data. My team and I implemented this 
-						application with Java and MySQL.
+						application through both Java and MySQL.
 					</span>
 				</h3><!-- /.section-name -->
-				<h2 class="section-title">
-					Coming Soon
-				</h2><!-- /.Section-title  -->
-				<div id="time_countdown" class="time-count-container">
-
-					<div class="col-sm-3">
-						<div class="time-box">
-							<div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300">
-								<span class="time-number">
-									<span class="digit">0</span>
-									<span class="digit">0</span>
-									<span class="digit">0</span>
-								</span>
-								<span class="time-name">Days</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="time-box">
-							<div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600">
-								<span class="time-number">
-									<span class="digit">0</span>
-									<span class="digit">0</span>	
-								</span>
-								<span class="time-name">Hours</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="time-box">
-							<div class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900">
-								<span class="time-number">
-									<span class="digit">0</span>
-									<span class="digit">0</span>
-								</span>
-								<span class="time-name">Minutes</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="time-box">
-							<div class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200">
-								<span class="time-number">
-									<span class="digit">0</span>
-									<span class="digit">0</span>
-								</span>
-								<span class="time-name">Seconds</span>
-							</div>
-						</div>
-					</div>
-					
-				</div><!-- /.time-count-container -->
 				
+				<!-- SLIDER -->
+				<div id="wrapper">
+					<div class="slider-wrapper theme-default">
+						<div id="slider" class="nivoSlider">
+							<img src="images/screenshots/parks_and_rec1.jpg" data-thumb="images/screenshots/parks_and_rec1.jpg" title="The Interface"/>
+							<img src="images/screenshots/parks_and_rec2.jpg" data-thumb="images/screenshots/parks_and_rec2.jpg" title="It's capability to illustrate charts and graphs" />
+							<img src="images/screenshots/parks_and_rec3.jpg" data-thumb="images/screenshots/parks_and_rec3.jpg" title="How the user can store park attendance data"/>
+						</div>
+					</div>
+				</div><!-- /.slider -->
+	
 			</div><!-- /.container -->
 		</div><!-- /.pattern -->		
 	</section><!-- /#page-top -->
@@ -134,6 +98,15 @@
 	<script type="text/javascript" src="assets/js/functions-projects.js"></script>
 	<!-- Custom JavaScript Functions -->
 	<script type="text/javascript" src="assets/js/jquery.ajaxchimp.min.js"></script>
+	
+	<!-- Slider Library and JS-->
+	<script type="text/javascript" src="assets/js/jquery-1.9.0_slider.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+		$(window).load(function() {
+			$('#slider').nivoSlider();
+		});
+    </script>
 	
 </body>
 </html>
